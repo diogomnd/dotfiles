@@ -1,7 +1,0 @@
-# Neovim
-nvim/.neoconf.json
-nvim/lazy-lock.json
-nvim/lazyvim.json
-
-# Dependencies
-nvim/lua/plugins/example.lua
