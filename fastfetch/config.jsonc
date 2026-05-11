@@ -1,0 +1,154 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "auto",
+        "width": 14,
+        "height": 18,
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        {
+            "type": "custom",
+            "format": "\u001b[32m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 󰍹 HARDWARE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\u001b[0m"
+        },
+        {
+            "type": "host",
+            "key": "┃ 󰌢 Host:",
+            "keyColor": "green"
+        },
+        {
+            "type": "cpu",
+            "key": "┃ 󰻠 CPU:",
+            "keyColor": "green"
+        },
+        {
+            "type": "gpu",
+            "key": "┃ 󰍛 GPU:",
+            "keyColor": "green"
+        },
+        {
+            "type": "disk",
+            "key": "┃ 󰋊 Disk:",
+            "keyColor": "green"
+        },
+        {
+            "type": "memory",
+            "key": "┃ 󰑭 Memory:",
+            "keyColor": "green"
+        },
+        {
+            "type": "swap",
+            "key": "┃ 󰓡 Swap:",
+            "keyColor": "green"
+        },
+        {
+            "type": "display",
+            "key": "┃ 󰍹 Display:",
+            "keyColor": "green"
+        },
+        {
+            "type": "battery",
+            "key": "┃ 󰂎 Battery:",
+            "keyColor": "green"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[33m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 󰒓 SOFTWARE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\u001b[0m"
+        },
+        {
+            "type": "shell",
+            "key": "┃ 󱥚 Shell:",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "terminal",
+            "key": "┃ 󰆍 Terminal:",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "terminalfont",
+            "key": "┃ 󰛖 Font:",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "de",
+            "key": "┃ 󰔍 DE:",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "wm",
+            "key": "┃ 󱂬 WM:",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "theme",
+            "key": "┃ 󰉼 GTK Theme:",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "icons",
+            "key": "┃ 󰀻 Icons:",
+            "keyColor": "yellow"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[34m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 󰊢 SYSTEM ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\u001b[0m"
+        },
+        {
+            "type": "title",
+            "key": "┃  Host:",
+            "format": "{user-name}@{host-name}",
+            "keyColor": "blue"
+        },
+        {
+            "type": "os",
+            "key": "┃ {icon} OS:",
+            "keyColor": "blue"
+        },
+        {
+            "type": "kernel",
+            "key": "┃ 󰌢 Kernel:",
+            "keyColor": "blue"
+        },
+        {
+            "type": "packages",
+            "key": "┃ 󰏖 Packages:",
+            "keyColor": "blue"
+        },
+        {
+            "type": "uptime",
+            "key": "┃ 󰅐 Uptime:",
+            "keyColor": "blue"
+        },
+        {
+            "type": "command",
+            "key": "┃ 󰆰 OS Age:",
+            "text": "echo $(( ($(date +%s) - $(stat -c '%Y' /var)) / 86400 )) days",
+            "keyColor": "blue"
+        },
+        {
+            "type": "localip",
+            "key": "┃ 󰩟 Local IP:",
+            "compact": false,
+            "keyColor": "blue"
+        },
+        {
+            "type": "publicip",
+            "key": "┃ 󰩠 Public IP:",
+            "keyColor": "blue",
+            "timeout": 1000
+        }
+        /*
+        {
+            "type": "wifi",
+            "key": "┃ 󰤨",
+            "format": "{ssid}",
+            "keyColor": "blue"
+        },
+        */
+    ]
+}
