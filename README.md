@@ -1,6 +1,6 @@
 # dotfiles
 
-Personal dotfiles for starship, ghostty, fastfetch, and neovim.
+Personal dotfiles for starship, ghostty, fastfetch, neovim and ulauncher.
 
 ## Installation
 
@@ -32,6 +32,7 @@ dotfiles/
     ├── ghostty/           # Ghostty terminal config
     ├── fastfetch/         # Fastfetch config
     └── nvim/              # Neovim config
+    └── ulauncher/         # Ulauncher config
 ```
 
 Stow symlinks everything in `.config/` to `~/.config/`.
