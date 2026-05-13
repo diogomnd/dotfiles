@@ -14,7 +14,7 @@ export PATH
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-eval "$(/home/diogomnd/.local/bin/mise activate bash)"
+eval "$(mise activate bash)"
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 
