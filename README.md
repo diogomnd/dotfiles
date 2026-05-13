@@ -31,7 +31,7 @@ dotfiles/
     ├── starship/          # Starship prompt config
     ├── ghostty/           # Ghostty terminal config
     ├── fastfetch/         # Fastfetch config
-    └── nvim/              # Neovim config
+    ├── nvim/              # Neovim config
     └── ulauncher/         # Ulauncher config
 ```
 
