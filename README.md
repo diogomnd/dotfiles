@@ -20,8 +20,12 @@ Then:
 ```bash
 git clone <your-repo-url> ~/dotfiles
 cd ~/dotfiles
-stow -t ~ .
+stow --adopt -t ~ .
+git checkout .
 ```
+
+> `--adopt` moves existing files (e.g. `~/.bashrc`) into the repo and creates symlinks.
+> `git checkout .` restores the repo versions as source of truth.
 
 ## Structure
 
