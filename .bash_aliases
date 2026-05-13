@@ -14,6 +14,7 @@ alias ..="z .."
 alias vim="nvim"
 
 # Git
+alias gpl="git pull"
 alias gs="git status"
 alias ga="git add"
 alias gm="git commit"
