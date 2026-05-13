@@ -1,6 +1,6 @@
 # dotfiles
 
-Personal dotfiles for starship, ghostty, fastfetch, neovim and ulauncher.
+Personal dotfiles for bashrc, starship, ghostty, fastfetch, neovim and ulauncher.
 
 ## Installation
 
@@ -20,29 +20,31 @@ Then:
 ```bash
 git clone <your-repo-url> ~/dotfiles
 cd ~/dotfiles
-stow -t ~ .config
+stow -t ~ .
 ```
 
 ## Structure
 
 ```
 dotfiles/
+├── .bashrc
+├── .bash_aliases
 └── .config/
-    ├── starship/          # Starship prompt config
+    ├── starship.toml      # Starship prompt config
     ├── ghostty/           # Ghostty terminal config
     ├── fastfetch/         # Fastfetch config
     ├── nvim/              # Neovim config
     └── ulauncher/         # Ulauncher config
 ```
 
-Stow symlinks everything in `.config/` to `~/.config/`.
+Stow symlinks everything in `~/dotfiles/` to `~`. Ignores `.git` and `README.md` by default.
 
 ## Updating
 
 After pulling changes:
 ```bash
 cd ~/dotfiles
-stow -t ~ .config
+stow -t ~ .
 ```
 
 ## Restoring
@@ -50,5 +52,5 @@ stow -t ~ .config
 Remove symlinks:
 ```bash
 cd ~/dotfiles
-stow -D -t ~ .config
+stow -D -t ~ .
 ```
